@@ -1,0 +1,71 @@
+How did viewing a diff between two different versions
+of a file help you see the bug that was introduced?
+
+Showing them one on top of the other made it easy to 
+compare the exact characters that should have been
+the same.  
+
+How could having easy access to the entire history 
+of a file make you a more efficient programmer in
+the long run?  
+
+Can revert back to earlier versions easier
+Can compare versions to detect unintended changes
+Can experiment more easily knowing it's possible 
+   to revert
+Others can see how the code has changed and
+   figure out why long after you're gone
+
+What do you think are the pros and cons of manually 
+choosing when to create a commit, like you do in git,
+vs having versions automaticaly saved, like Google
+Docs does?   
+
+Google docs doesn't know if you've reached a logical 
+stopping point.  It doesn't know how your changes
+hang together logically, it doesn't know if you've
+actually completed a fix, it doesn't know if it runs
+correctly or passes tests, and so on.   
+
+Why do you think some version control systems,
+like Git, allow saving multiple files in one
+commit, while others, like Google Docs, treat
+each file separately?  
+
+Most files managed by Google Docs contain all of
+the information that's logically related in one
+file.  In code, dependencies tend to cross file
+lines, forcing multiple files to change at once
+to make a logical unit of difference.
+
+How can you use the commands git log and git diff
+to view the history of files?    
+
+git log shows the commits, which will generally 
+represent times when files changed.   Use git diff
+to see the exact change that occured between any
+two given commits.  
+
+How might using version control make you more confident
+to make changes that could break something?
+
+You'll never lose any state of your code so you can
+always get back to something that works if you have 
+it.   What's more, you can see what you did that 
+created the bug using diff.   Finally, it's easy to
+create branches of ealier work and make changes to
+that for a while in order to explore behavior, all
+without having any impact on what you're doing in
+your latest branch.   
+
+No that you have your workspace set up, what do you
+want to try using git for?   
+
+I'm already using for a number of things, including
+an Android Nanodegree course with Udacity.   As I'm
+self taught in git, my goal is to fill in any the
+fundamentals I may have missed and to get a better
+understanding of the concepts.   I'll keep using it
+in my courses and other development.   
+
+
