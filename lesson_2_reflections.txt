@@ -1,0 +1,13 @@
+What happens when you initialize a repository?  Why do 
+you need to do it?  
+
+A dircetory named .git is created.  It holds metadata
+about your repository.   
+
+How is the staging area different from the working directory
+and the repository?  What value do you think it offers?  
+
+It contains files that will be added in the next commit.  
+This allows you to work on all files knowing that only
+the added files will be added to the repository at the
+next commit.   
