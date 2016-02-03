@@ -11,3 +11,53 @@ It contains files that will be added in the next commit.
 This allows you to work on all files knowing that only
 the added files will be added to the repository at the
 next commit.   
+
+How can you use the staging area to make sure you have
+one commit per logical change?   
+
+Add only files that are part of that change and then
+commit them together.  If you change your mind, then
+remove any files from the stage that aren't part of 
+the change, adding one that are as necessary, then
+commit.  It's also possible to remove all the files,
+then add other ones to commit a change that needs to
+go in instead, for any reason.   This gives some 
+flexibility to what goes into the repository.   
+
+What are some situations when branches would be helpful
+in keeping your history organized?   How would branches help?  
+
+Branches are helpful when you need to experiment.  They
+are helpful when you need to make a version of the app
+with alternative behavior to make testing easier or to 
+keep a stable version, or to allow many people to work
+on features separately without stepping on eachother's
+toes.  It can make it easier to fix a bug in the main
+branch and ship it without affecting work that may be 
+going on elsewhere, or vice-versa.   
+
+How do the diagrams help you visualize the branch structure?  
+
+The show you the commit where new branches were created
+and all the commits that followed on each branch.  By 
+patching them together, it's possible to get the entire
+branching tree.  
+
+What is the result of merging two banches together?  Why
+do we represent it in the diagram the way we do?   
+
+We add all the non-confliciting changes from one branch
+into another, most usually master.  Commits are then
+shown as interleaved by time of commit in a log command.
+In the diagram we see the branches coming together in
+a single node.  This lets us see that all of the 
+changes made in both branches now live in the single
+remaining branch.   
+
+What are the pros and cons of git's automatic merging 
+vs always doing merges manually?   
+
+Pros:  speed, can be less prone to mistakes
+Cons:  sometimes new code can be merged in
+which introduces a bug.  
+  
